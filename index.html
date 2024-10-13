@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./JS/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link">Logo</a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Blog</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Videos</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Sobre mí</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Intel lanza su primer procesador con tecnología cuántica</h2>
+        <p>
+          Intel ha anunciado el lanzamiento de su primer procesador cuántico, llamado
+          <strong>TunnelVision Q1</strong>, marcando un avance histórico en la computación cuántica. Este procesador, 
+          que emplea qubits superconductores, promete acelerar cálculos extremadamente complejos que serían imposibles 
+          para la computación clásica. A través de este desarrollo, Intel busca no solo competir con gigantes como Google 
+          e IBM, sino también liderar la revolución de la informática cuántica en las próximas décadas.
+        </p>
+        
+        <!-- Imagen principal del procesador -->
+        <figure>
+          <img src="./img/procesador.jpg" alt="Imagen del procesador cuántico de Intel" />
+          <figcaption>Procesador cuántico TunnelVision Q1 de Intel.</figcaption>
+        </figure>
+    
+        <p>
+          La computación cuántica difiere de la tradicional en que utiliza qubits en lugar de bits. Mientras que un bit clásico
+          solo puede tener dos valores (0 o 1), los qubits pueden estar en múltiples estados simultáneamente gracias a un
+          fenómeno conocido como superposición. Esto permite que las computadoras cuánticas procesen grandes volúmenes
+          de información de manera paralela, incrementando exponencialmente la capacidad de resolución de problemas.
+        </p>
+    
+        <h3>Impacto en la inteligencia artificial y la simulación molecular</h3>
+        <p>
+          Una de las aplicaciones más prometedoras de la computación cuántica es su impacto en la inteligencia artificial (IA).
+          Actualmente, la IA requiere enormes cantidades de procesamiento de datos para entrenar algoritmos complejos. Con 
+          la llegada de los procesadores cuánticos, la capacidad de procesamiento se multiplica, lo que permitirá a los 
+          científicos y desarrolladores entrenar redes neuronales en tiempos drásticamente reducidos. Esto podría traducirse 
+          en avances significativos en el reconocimiento de patrones, la visión por computadora y el aprendizaje profundo.
+        </p>
+        <p>
+          Asimismo, la simulación molecular es otra área donde la computación cuántica promete transformar la industria. 
+          Las simulaciones químicas precisas requieren una cantidad masiva de procesamiento, y las computadoras actuales no 
+          pueden realizar cálculos cuánticos de sistemas moleculares complejos con precisión. Con <strong>TunnelVision Q1</strong>, 
+          Intel apunta a facilitar simulaciones que permitirán a los científicos desarrollar nuevos materiales, como mejores 
+          baterías, compuestos químicos y medicamentos avanzados, algo que hasta ahora ha sido muy difícil de alcanzar.
+        </p>
+    
+        <!-- Galería de imágenes opcional -->
+        <div class="image-gallery">
+          <h3>Galería de imágenes del desarrollo cuántico</h3>
+          <div class="gallery-row">
+            <figure>
+              <img src="./img/Intel-ordenadores-cuánticos.jpg" alt="Laboratorio de desarrollo cuántico de Intel" />
+              <figcaption>Laboratorio de desarrollo cuántico de Intel.</figcaption>
+            </figure>
+            <figure>
+              <img src="./img/Chip cuántico en desarrollo.jpg" alt="Chip cuántico en desarrollo" />
+              <figcaption>Chip cuántico durante su desarrollo.</figcaption>
+            </figure>
+          </div>
+        </div>
+    
+        <h3>Desafíos en la computación cuántica</h3>
+        <p>
+          A pesar de su enorme potencial, la computación cuántica enfrenta importantes desafíos. Los qubits son altamente 
+          inestables y pueden ser alterados por el entorno más mínimo, lo que los hace propensos a errores. Estos errores 
+          son difíciles de corregir con los métodos de computación clásica. Además, las computadoras cuánticas necesitan 
+          operar a temperaturas extremadamente bajas (cerca del cero absoluto) para mantener la estabilidad de los qubits.
+        </p>
+        <p>
+          Intel ha reconocido estos obstáculos y ha destinado una gran cantidad de recursos para investigar soluciones
+          como la corrección de errores cuánticos y el desarrollo de materiales superconductores más eficientes. Con
+          <strong>TunnelVision Q1</strong>, Intel ha logrado avances significativos en la reducción de la tasa de errores,
+          aunque la perfección aún está lejos. El siguiente paso será hacer que estas tecnologías sean más asequibles y
+          operativas a gran escala.
+        </p>
+    
+        <h3>La competencia en el mundo cuántico</h3>
+        <p>
+          Intel no es el único jugador en el campo de la computación cuántica. Empresas como <strong>Google</strong> y 
+          <strong>IBM</strong> también están invirtiendo agresivamente en el desarrollo de sus propios procesadores cuánticos. 
+          En 2019, Google proclamó haber alcanzado la "supremacía cuántica" con su procesador <em>Sycamore</em>, lo que
+          significa que completaron un cálculo que una computadora clásica no podría haber resuelto en un tiempo razonable.
+          IBM, por su parte, ha lanzado su línea de procesadores <em>Q System One</em>, diseñados para ser usados en laboratorios 
+          de investigación y por grandes corporaciones.
+        </p>
+        <p>
+          Sin embargo, Intel ha adoptado un enfoque más pragmático. En lugar de enfocarse exclusivamente en demostrar la
+          supremacía cuántica, su objetivo es hacer que la computación cuántica sea accesible y funcional para industrias
+          enteras. Según declaraciones de la compañía, la clave está en ofrecer soluciones escalables que puedan ser 
+          integradas en aplicaciones prácticas, como la optimización de redes de transporte, la inteligencia artificial y 
+          la creación de nuevas formas de energía.
+        </p>
+    
+        <h3>Futuro de la computación cuántica</h3>
+        <p>
+          Aunque estamos en las primeras fases de la era cuántica, el progreso ha sido impresionante. Los expertos predicen
+          que la computación cuántica cambiará la estructura misma de la industria tecnológica. Con el paso de los años,
+          es probable que estas máquinas sean más comunes en laboratorios, centros de investigación e incluso en las manos
+          de grandes empresas que buscan resolver problemas que antes eran impensables.
+        </p>
+        <p>
+          Intel, junto con otros competidores, está liderando esta carrera y continuará innovando para llevar la computación
+          cuántica a una realidad cotidiana. Lo que hoy parece una tecnología emergente, en unos años podría ser la base 
+          sobre la que se construyan todas las aplicaciones futuras.
+        </p>
+    
+        <p>
+          <a href="https://technews.com/intel-tunnelvision-q1">Fuente de la noticia</a>
+        </p>
+        <p>Por: Juan Pérez</p>
+      </section>
+    </main>
+    
+
+    <footer class="footer">
+      <section class="footer__container container">
+        <ul class="social-icon">
+          <li class="icon-elem">
+            <a href="#" class="icon">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="#" class="icon">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="#" class="icon">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="#" class="icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="#" class="icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu-elem">
+            <a href="#" class="menu-icon">Inicio</a>
+          </li>
+          <li class="menu-elem">
+            <a href="#" class="menu-icon">Equipo</a>
+          </li>
+          <li class="menu-elem">
+            <a href="#" class="menu-icon">Contacto</a>
+          </li>
+          <li class="menu-elem">
+            <a href="#" class="menu-icon">Video</a>
+          </li>
+          <li class="menu-elem">
+            <a href="#" class="menu-icon">Sobre Nosotros</a>
+          </li>
+        </ul>
+        <p class="text">@Año | Todos los derechos reservados</p>
+      </section>
+    </footer>
+    
+  </body>
+</html>
