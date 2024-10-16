@@ -1,11 +1,18 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el body ocupe el 100% de la ventana */
   padding: 90px 20px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
 }
 
 .header {
@@ -76,153 +83,99 @@ body {
 /* MOBILE */
 @media (max-width: 768px) {
   body {
-    padding-top: 70px;
+      padding-top: 70px;
   }
 
   .header {
-    height: 60px;
+      height: 60px;
   }
 
   .logo {
-    font-size: 25px;
-    padding: 0 20px;
-    line-height: 60px;
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
   }
 
   .nav-menu {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    background-color: #2c3e50;
-    position: fixed;
-    top: 60px;
-    width: 100%;
-    padding: 20px 0;
-
-    height: calc(100% - 60px);
-    overflow-y: auto;
-
-    left: 100%;
-    transition: left 0.3s;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2c3e50;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+      height: calc(100% - 60px);
+      overflow-y: auto;
+      left: 100%;
+      transition: left 0.3s;
   }
 
   .nav-menu-item {
-    line-height: 70px;
+      line-height: 70px;
   }
 
   .nav-menu-link:hover,
   .nav-menu-link_active {
-    background: none;
-    color: #83c5f7;
+      background: none;
+      color: #83c5f7;
   }
 
   .nav-toggle {
-    display: block;
+      display: block;
   }
 
   .nav-menu_visible {
-    left: 0;
+      left: 0;
   }
 
   .nav-toggle:focus:not(:focus-visible) {
-    outline: none;
+      outline: none;
   }
 }
 
-body {
+main {
+  display: block;
+  min-height: calc(100vh - 120px); /* Ajusta la altura del main teniendo en cuenta el footer */
+  padding: 20px; /* Espacio para el contenido */
+}
+
+main section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.image-gallery {
+  margin-top: 20px;
+}
+
+.gallery-row {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 100vh;
-  background-color: white;
+  gap: 20px; /* Espacio entre imágenes */
+  justify-content: space-around; /* Distribuye las imágenes de manera uniforme */
 }
 
-.footer {
-  position: relative;
-  width: 100%;
-  background: #286bcf;
-  min-height: 100px; /* Puede ajustarse según sea necesario */
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.social-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: 10px 5px;
-  flex-wrap: wrap;
-}
-
-.icon-elem {
-  list-style: none;
-}
-
-.icon {
-  color: white;
-  font-size: 32px;
-  display: inline-block;
-  margin: 0 10px;
-  transition: 0.5s;
-}
-
-.icon:hover {
-  transform: translateY(-10px);
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
-
-.menu-elem {
-  list-style: none;
-}
-
-.menu-icon {
-  color: white;
-  font-size: 20px;
-  display: inline-block;
-  text-decoration: none;
-  margin: 5px 10px;
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-.menu-icon:hover {
-  opacity: 1;
-}
-
-.text {
-  color: white;
+.gallery-row figure {
+  flex: 1;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 20px;
 }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
+.gallery-row img {
+  max-width: 100%; /* Asegura que las imágenes no excedan el tamaño del contenedor */
+  height: auto;
+  border-radius: 10px;
 }
 
+/* FOOTER */
 .footer {
   background-color: #333;
   color: white;
   padding: 20px 0;
-  position: fixed; /* Cambiado a relative si se prefiere que el footer no se superponga */
-  left: 0;
-  bottom: 0;
+  position: relative;
   width: 100%;
+  bottom: 0;
+  margin-top: auto; /* Empuja el footer al final del contenedor flexible */
 }
 
 .footer-content {
@@ -282,38 +235,21 @@ body {
 
 @media (max-width: 700px) {
   .footer {
-    display: flex;
-    justify-content: center;
+      display: flex;
+      justify-content: center;
   }
   .footer-content {
-    flex-direction: column;
-    gap: 20px;
+      flex-direction: column;
+      gap: 20px;
   }
   .title::after {
-    content: "";
-    position: absolute;
-    left: 0%;
-    top: 100%;
-    width: 30px;
-    height: 3px;
-    border-radius: 5px;
-    background-color: #ffe647;
+      content: "";
+      position: absolute;
+      left: 0%;
+      top: 100%;
+      width: 30px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: #ffe647;
   }
 }
-
-main {
-  display: block;
-  min-height: calc(100vh - 200px); /* Asegura que el main no sea tapado por el footer */
-  padding: 20px; /* Asegura un espacio de relleno */
-  padding-bottom: 120px; /* Crea espacio para el footer fijo */
-}
-
-main section {
-  border: 1px solid #ccc;
-  padding: 20px;
-  background-color: #fff;
-}
-
-
-  
-  
