@@ -224,7 +224,7 @@ body {
 .footer {
   background-color: #333;
   color: white;
-  padding: 20px 0;
+  padding: 10px 0;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -286,10 +286,13 @@ body {
   color: #ff6347; /* A nice color for hover effect */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .footer {
     display: flex;
     justify-content: center;
+    margin-top: 50px; /* Separación entre main y footer */
+    position: relative; /* El footer no se superpone al contenido */
+    clear: both;
   }
   .footer-content {
     flex-direction: column;
@@ -307,9 +310,9 @@ body {
   }
 }
 main {
-  display: block;
-  min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
-  padding: 20px; /* Asegura un espacio de relleno */
+  padding: 20px; 
+  min-height: 100vh;
+  margin-bottom: 100px;
 }
 
 
