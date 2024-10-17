@@ -316,71 +316,71 @@ body {
 }
 
 /* Estilos para el main-content */
-main {
-  background-color: #f9f9f9; /* Fondo claro para mayor contraste */
-  padding: 20px; /* Espaciado alrededor del contenido */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+/* Estilos generales para la sección */
+main section {
+  background-color: #f5f5f5; /* Fondo gris claro */
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 50px; /* Espacio inferior */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  font-family: Arial, sans-serif;
 }
 
-/* Mejorar el título dentro de main-content */
-main h1, main h2 {
-  font-family: 'Roboto', sans-serif; /* Fuente más moderna */
-  font-size: 2rem; /* Tamaño de fuente más grande */
-  color: #333; /* Color oscuro para el texto */
-  text-align: center; /* Alineación centrada */
-  margin-bottom: 15px; /* Espacio inferior para separar de otros elementos */
+main section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50; /* Título en color oscuro */
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-/* Estilos para el contenido del párrafo */
-main p {
-  font-family: 'Open Sans', sans-serif; /* Cambiar la fuente */
-  font-size: 1.1rem; /* Aumentar ligeramente el tamaño de la letra */
-  line-height: 1.6; /* Mejorar el espaciado entre líneas */
-  color: #666; /* Color de texto gris para mejor legibilidad */
-  margin-bottom: 20px; /* Espaciado entre párrafos */
-  text-align: justify; /* Justificación del texto */
+main section p {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-/* Agregar un grid para organizar el contenido dentro de main */
-main .content-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px; /* Espaciado entre los elementos del grid */
+main section strong {
+  color: #e74c3c; /* Color resaltado en negritas */
 }
 
-/* Mejorar las tarjetas dentro del grid */
-main .card {
-  background-color: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+main section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2980b9; /* Color del subtítulo */
+  margin-bottom: 15px;
 }
 
-/* Efecto hover en las tarjetas */
-main .card:hover {
-  transform: translateY(-5px); /* Mover ligeramente hacia arriba */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Aumentar la sombra */
+/* Estilos para la imagen principal */
+main section figure {
+  text-align: center;
+  margin: 20px 0;
 }
 
-/* Estilos para imágenes dentro del main-content */
-main img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px; /* Bordes redondeados en imágenes */
-  margin-bottom: 15px; /* Espaciado debajo de la imagen */
+main section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de la imagen */
 }
 
+main section figcaption {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 5px;
+}
 
+/* Estilos para la galería de imágenes */
 .image-gallery {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .gallery-row {
   display: flex;
-  gap: 20px; /* Espacio entre imágenes */
-  justify-content: space-around; /* Distribuye las imágenes de manera uniforme */
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .gallery-row figure {
@@ -389,7 +389,22 @@ main img {
 }
 
 .gallery-row img {
-  max-width: 100%; /* Asegura que las imágenes no excedan el tamaño del contenedor */
-  height: auto;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.gallery-row figcaption {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-top: 8px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .gallery-row {
+      flex-direction: column;
+  }
+}
+
+
