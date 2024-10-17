@@ -314,18 +314,64 @@ body {
     background-color: #ffe647;
   }
 }
+
+/* Estilos para el main-content */
 main {
-  padding: 20px; 
-  min-height: 100vh;
-  margin-bottom: 100px;
+  background-color: #f9f9f9; /* Fondo claro para mayor contraste */
+  padding: 20px; /* Espaciado alrededor del contenido */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-
-main section {
-  border: 1px solid #ccc;
-  padding: 20px;
-  background-color: #fff;
+/* Mejorar el título dentro de main-content */
+main h1, main h2 {
+  font-family: 'Roboto', sans-serif; /* Fuente más moderna */
+  font-size: 2rem; /* Tamaño de fuente más grande */
+  color: #333; /* Color oscuro para el texto */
+  text-align: center; /* Alineación centrada */
+  margin-bottom: 15px; /* Espacio inferior para separar de otros elementos */
 }
+
+/* Estilos para el contenido del párrafo */
+main p {
+  font-family: 'Open Sans', sans-serif; /* Cambiar la fuente */
+  font-size: 1.1rem; /* Aumentar ligeramente el tamaño de la letra */
+  line-height: 1.6; /* Mejorar el espaciado entre líneas */
+  color: #666; /* Color de texto gris para mejor legibilidad */
+  margin-bottom: 20px; /* Espaciado entre párrafos */
+  text-align: justify; /* Justificación del texto */
+}
+
+/* Agregar un grid para organizar el contenido dentro de main */
+main .content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Espaciado entre los elementos del grid */
+}
+
+/* Mejorar las tarjetas dentro del grid */
+main .card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover en las tarjetas */
+main .card:hover {
+  transform: translateY(-5px); /* Mover ligeramente hacia arriba */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Aumentar la sombra */
+}
+
+/* Estilos para imágenes dentro del main-content */
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados en imágenes */
+  margin-bottom: 15px; /* Espaciado debajo de la imagen */
+}
+
 
 .image-gallery {
   margin-top: 20px;
