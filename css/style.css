@@ -342,3 +342,16 @@ main section {
   height: auto;
   border-radius: 10px;
 }
+
+
+.back-to-top {
+  display: block;
+  margin-top: 1rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  color: #f39c12;
+}
